@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Food Hub</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious Food Delivered Fast</h2>
+    <p>Fresh meals made with love</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-container">
+
+      <div class="item">
+        <h3>Burger</h3>
+        <p>$5</p>
+        <button onclick="addToCart('Burger', 5)">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <h3>Pizza</h3>
+        <p>$8</p>
+        <button onclick="addToCart('Pizza', 8)">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <h3>Pasta</h3>
+        <p>$7</p>
+        <button onclick="addToCart('Pasta', 7)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
